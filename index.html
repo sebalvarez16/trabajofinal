@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miau Market - Tienda de Cats</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<!-- BODY CATS-->
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <nav class="menu">
+            <ul class="list-menu">
+                <li class="list-item"><a href="index.html">Inicio</a></li>
+                <li class="list-item"><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li class="list-item"><a href="productos.html">Productos</a></li>
+                <li class="list-item"><a href="contacto.html">Contacto</a></li>
+                <li class="list-item" id="myBtn" >Agregar Producto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section-products" id="divProducts"></div>
+        <!-- ALIMENTOS -->
+        <div class="section-description">
+            <img src="images/portada_alimentos.png" alt="">
+            <div class="desc-elements">
+                <h1>ALIMENTOS SECOS</h1>
+                <p>Descubre más productos</p>
+            </div>
+        </div>
+
+        <div class="section-products" id="divProducts">
+         </div>
+
+        <!-- SNACKS -->
+        <div class="section-description">
+            <div class="desc-elements">
+                <h1>SNACKS</h1>
+                <p>Descubre más productos</p>
+            </div>
+            <img src="images/portada_snacks.png" alt="">
+        </div>
+
+        <!-- ARNES -->
+        <div class="section-description">
+            <img src="images/portada_arnes.png" alt="">
+            <div class="desc-elements">
+                <h1>ARNES</h1>
+                <p>Descubre más productos</p>
+            </div>
+        </div>
+
+        <!-- TRANSPORTADOR -->
+        <div class="section-description">
+            <div class="desc-elements">
+                <h1>TRANSPORTADORES</h1>
+                <p>Descubre más productos</p>
+            </div>
+            <img src="images/portada_transportador.png" alt="">
+        </div>
+
+    <!-- MODAL -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Cerrar modal-->
+            <div class="formulario">
+                <form action="/action_page.php">
+                  <label for="fname">Nombre del producto</label>
+                  <input type="text" id="pname" name="firstname" placeholder="Tu nombre...">
+              
+                  <label for="lname">Precio</label>
+                  <input type="number" id="pprice" name="lastname" placeholder="Precio...">
+              
+                  <label for="sproduct">Categoria producto</label>
+                  
+                  <select id="sproduct" name="country">
+                    <option value="Juguetes">Juguetes</option>
+                    <option value="Accesorios">Accesorios</option>
+                    <option value="Accesorios">Transporte</option>
+                  </select>
+
+                  <input type="file" id="pdocument">
+                  <input onclick="addProduct()" type="button" value="Agregar">
+                </form>
+              </div>
+              
+        </div>
+    </div>
+    
+    <script src="js/modal.js"></script>
+
+</body>
+<footer>
+    <p>Trabajo final <strong>D. Sebastián Álvarez Contreras</strong></p>
+</footer>
+
+</html>

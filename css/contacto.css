@@ -1,0 +1,65 @@
+/* FORMULARIO */
+.container{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 80%;
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, .75);
+    margin-bottom: 1rem;
+
+}
+
+.container > .element{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container > .element > .item{
+    width: 48%;
+    max-width: 48%;
+}
+
+.container > .element > .item > textarea{
+    width: 100%;
+    font-size: 20px;
+}
+
+
+.container > .btn{
+    font-size: 25px;
+    background-color: rgb(233, 183, 45);
+    color: rgb(20, 20, 20);
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* VALIDACIONES */
+
+.error{
+    border: 5px solid rgb(194, 6, 6)!important;
+}
+.success{
+    border: 5px solid rgb(7, 170, 7)!important;
+}
+
+footer {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+footer strong {
+    color: #fbd601;
+}

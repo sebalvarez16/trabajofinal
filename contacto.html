@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Miau Market</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <!-- MENU -->
+    <header class="header">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <nav class="menu">
+            <ul class="list-menu">
+                <li class="list-item"><a href="index.html">Inicio</a></li>
+                <li class="list-item"><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li class="list-item"><a href="productos.html">Productos</a></li>
+                <li class="list-item"><a href="contacto.html">Contacto</a></li>
+                <li class="list-item" id="myBtn">Agregar Producto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTACTO -->
+    <div class="container">
+        <div class="element">
+            <div class="item">
+                <label for="">Nombre De Usuario</label>
+                <input type="text" placeholder="Ingresa tu nombre" id="name">
+            </div>
+            <div class="item">
+                <label for="">Numero de telefono</label>
+                <input type="number" placeholder="Ingresa tu telefono" id="tel">
+            </div>
+        </div>
+        <div class="element">
+            <div class="item">
+                <label for="">Email</label>
+                <input type="text" placeholder="Ingresa tu email">
+            </div>
+            <div class="item">
+                <label for="">Productos</label>
+                <select name="" id="">
+                    <option value="1">Seleccionar una opción</option>
+                    <option value="JCAT">Juegos para Gatos</option>
+                    <option value="ARN">Areneros</option>
+                    <option value="MDC">Medicamentos</option>
+                </select>
+            </div>
+        </div>
+        <div class="element">
+            <div class="item">
+                <label for="">Mensaje</label>
+                <textarea placeholder="Ingresa tu mensaje" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <button class="btn" onclick="ValidarDatos()"> <i class="fas fa-address-book"></i> Enviar datos</button>
+    </div>
+    
+    <script src="js/contacto.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+</body>
+<footer>
+    <p>Trabajo final <strong>D. Sebastián Álvarez Contreras</strong></p>
+</footer>
+</html>

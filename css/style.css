@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+/* HEADER y MENU*/
+.header{
+    width: 100%;
+}
+.header > a > img{
+    width: 10%;
+    margin: auto;
+    display: block;
+}
+
+.menu{
+    background-color: #141414;
+    position: sticky;
+    margin-top: 5px;
+}
+
+.list-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+}
+
+.list-menu > .list-item{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    border: 3px solid white;
+    color: black;
+    font-weight: bold;
+    margin: 15px;
+    background-color: rgb(233, 183, 45);
+    border-radius: 10px;
+}
+
+
+.list-menu > .list-item > a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.list-menu > .list-item:hover{
+    cursor: pointer;
+}
+
+.container{
+    background-color:lightgoldenrodyellow;
+    
+}
+
+
+/* PRODUCTOS GATOS */
+.section-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.section-description > img{
+    width: 50%;
+    margin: 1%;
+    border-radius: 1%;
+    border: 3px solid rgb(131, 131, 131);
+    box-shadow: 10px 10px 5px -5px rgba(240, 203, 125, 0.75);
+    
+}
+.section-description > .desc-elements{
+    width: 50%;
+    text-align: center;
+}
+
+.section-description > .desc-elements > h1{
+    font-size: 3rem;
+}
+
+.section-description > .desc-elements > p{
+    font-size: 2rem;
+}
+
+/* PRODUCTOS */
+.section-products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.section-products > .product{
+    width: 20%;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    text-align: center;
+    margin: 20px;
+}
+
+.section-products > .product:hover{
+    cursor: pointer;
+    transform: scale(.95);
+}
+
+.section-products > .product > img{
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    max-height: 400px;
+}
+
+.section-products > .product > .product-area{
+    color: #0d265c;
+    font-size: 30px;
+}
+
+.section-products > .product > .product-name{
+    font-size: 25px;
+    color: rgb(29, 27, 27);
+    font-style:italic;
+}
+
+.section-products > .product > .product-price{
+    font-size: 25px;
+    color: rgb(29, 27, 27);
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+/* MODAL */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity  Fondo opacidad*/
+    font-size: 25px;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #f1dd9c;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #f1b81c;
+    float: right;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-right: 1%;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /* FORMULARIO AGREGAR */
+
+  .formulario {
+    border-radius: 1.5%;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+
+  input[type=text], input[type=number], input[type=file], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    background-color: #ac6305;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=button]:hover {
+    background-color: #f39810;
+  }
+  
+  
+
+
+
+
+
+/* PIE DE PAGINA */
+  footer {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+footer strong {
+    color: #fbd601;
+}
